@@ -1,5 +1,22 @@
 /* Your Code Here */
 
+const normalizedWord = word.toLowerCase().replace(/[\W_]/g, '');
+
+  // Check palindrome condition
+  for (let i = 0; i < normalizedWord.length / 2; i++) {
+    if (normalizedWord[i] !== normalizedWord[normalizedWord.length - 1 - i]) {
+      return false;
+    }
+  }
+{return true;
+}
+
+
+
+
+
+
+
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
